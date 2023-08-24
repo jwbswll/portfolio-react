@@ -1,0 +1,96 @@
+@use "../../partials/colors" as c;
+
+.menu {
+	.border {
+		position: fixed;
+		z-index: 1000;
+		top: 1em;
+		right: 1em;
+		height: 3em;
+		width: 3em;
+		border: 2px solid c.$secondary;
+		border-radius: 10px;
+		background-color: c.$tertiary;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5em;
+		.top,
+		.middle,
+		.bottom {
+			width: 2em;
+			border: 0.1em solid c.$secondary;
+			border-radius: 10px;
+			background-color: c.$secondary;
+		}
+	}
+
+	.top {
+		transform: translateY(0em);
+		transition-property: transform;
+		transition-duration: 0.5s;
+	}
+
+	.middle {
+		transform: rotate(360deg);
+		transition-property: transform;
+		transition-duration: 0.5s;
+	}
+
+	.bottom {
+		transform: translateY(0em) rotate(360deg);
+		transition-property: transform;
+		transition-duration: 0.5s;
+	}
+
+	.rotate_top {
+		transform: translateY(0.7em) rotate(-45deg);
+		transform-origin: 50%;
+		transition-property: transform;
+		transition-duration: 0.5s;
+	}
+
+	.rotate_middle {
+		transform: rotate(-315deg);
+		transition-property: transform;
+		transition-duration: 0.5s;
+	}
+
+	.rotate_bottom {
+		transform: translateY(-0.67em) rotate(405deg);
+		transform-origin: 50%;
+		transition-property: transform;
+		transition-duration: 0.5s;
+	}
+}
+.drawer {
+	width: 80vw;
+	height: 100vh;
+	background-image: linear-gradient(
+		to right,
+		rgba(153, 56, 0, 0) 0%,
+		rgba(153, 56, 0, 0.2) 20%,
+		rgba(153, 56, 0, 0.4) 40%,
+		rgba(153, 56, 0, 0.6) 70%,
+		rgba(153, 56, 0, 0.8) 100%
+	);
+	position: fixed;
+	z-index: 20;
+	right: -70vw;
+	top: 0;
+
+	transform: translateX(70vw);
+	transition-property: transform;
+	transition-duration: 1s;
+	.nav_container {
+		position: absolute;
+		bottom: 2em;
+		right: 2em;
+	}
+	&_open {
+		transform: translateX(-70vw);
+		transition-property: transform;
+		transition-duration: 1s;
+	}
+}

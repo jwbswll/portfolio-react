@@ -1,10 +1,21 @@
+import style from "./About.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+	faHtml5,
+	faCss3,
+	faSass,
+	faJs,
+	faJava,
+	faReact,
+} from "@fortawesome/free-brands-svg-icons";
+
 const About = () => {
 	return (
-		<main>
-			<h2>a little about me</h2>
-			<div>
+		<main className={style.main}>
+			<h2 className={style.page_heading}>a little about me</h2>
+			<div className={style.about_content}>
 				<p>Kia Ora! I'm Jack.</p>
-				<p>
+				<p className={style.about_content_para}>
 					Originally from Aotearoa New Zealand and currently based in Melbourne.
 				</p>
 				<p>
@@ -14,27 +25,29 @@ const About = () => {
 				</p>
 				<p>
 					I also come packed with the design skills I gained from a Certificate
-					IV in Digital Media & Design at
+					IV in Digital Media & Design at{" "}
 					<a href="https://www.whitecliffe.ac.nz/">Whitecliffe</a> in Auckland.
 				</p>
 			</div>
-			<h4>technologies i've worked with</h4>
-			<div>
+			<h4 className={style.known_tech__heading}>
+				technologies i've worked with
+			</h4>
+			<div className={style.known_tech}>
 				<div>
 					<p>HTML</p>
-					<i></i>
+					<FontAwesomeIcon icon={faHtml5} />
 				</div>
 				<div>
 					<p>CSS</p>
-					<i></i>
+					<FontAwesomeIcon icon={faCss3} />
 				</div>
 				<div>
 					<p>SCSS</p>
-					<i></i>
+					<FontAwesomeIcon icon={faSass} />
 				</div>
 				<div>
 					<p>JavaScript</p>
-					<i></i>
+					<FontAwesomeIcon icon={faJs} />
 				</div>
 				<div>
 					<p>TypeScript</p>
@@ -42,11 +55,11 @@ const About = () => {
 				</div>
 				<div>
 					<p>Java</p>
-					<i></i>
+					<FontAwesomeIcon icon={faJava} />
 				</div>
 				<div>
 					<p>React</p>
-					<i></i>
+					<FontAwesomeIcon icon={faReact} />
 				</div>
 				<div>
 					<p>Spring</p>

@@ -1,8 +1,8 @@
 @use "../../partials/colors" as c;
 
 .container {
-	height: 380px;
-	width: 380px;
+	height: 300px;
+	width: 300px;
 	border-radius: 50%;
 	background: linear-gradient(140deg, c.$secondary, c.$tertiary);
 	display: flex;
@@ -11,8 +11,8 @@
 }
 
 .img {
-	height: 360px;
-	width: 360px;
+	height: 280px;
+	width: 280px;
 	border-radius: 50%;
 	object-fit: cover;
 }

@@ -1,0 +1,48 @@
+@use "../../partials/colors" as c;
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	.page_heading {
+		font-size: 2em;
+		color: c.$secondary;
+		font-family: "Aventena", Arial;
+	}
+	.about_content {
+		width: 85vw;
+		padding: 0;
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: left;
+		font-size: 1.1em;
+	}
+	.known_tech {
+		display: flex;
+		width: 60vw;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		&__heading {
+			font-size: 1.5em;
+			color: c.$secondary;
+			font-family: "Aventena", Arial;
+		}
+		&__container {
+			display: flex;
+			flex-direction: column-reverse;
+			align-items: center;
+			justify-content: center;
+			height: 80px;
+			width: 70px;
+			&--label {
+				font-weight: 600;
+				font-size: 0.7em;
+			}
+			&--icon {
+				font-size: 40px;
+				padding-bottom: 1vh;
+			}
+		}
+	}
+}
