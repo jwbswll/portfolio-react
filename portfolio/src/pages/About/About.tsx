@@ -8,6 +8,10 @@ import {
 	faJava,
 	faReact,
 } from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import typescript from "../../icons8-typescript-50.png";
+import nest from "../../nestjs.svg";
+import spring from "../../icons8-spring-boot-48.png";
 
 const About = () => {
 	return (
@@ -26,52 +30,58 @@ const About = () => {
 				<p>
 					I also come packed with the design skills I gained from a Certificate
 					IV in Digital Media & Design at{" "}
-					<a href="https://www.whitecliffe.ac.nz/">Whitecliffe</a> in Auckland.
+					<a
+						className={style.whitecliffe}
+						href="https://www.whitecliffe.ac.nz/"
+					>
+						Whitecliffe
+					</a>{" "}
+					in Auckland.
 				</p>
 			</div>
 			<h4 className={style.known_tech__heading}>
 				technologies i've worked with
 			</h4>
 			<div className={style.known_tech}>
-				<div>
-					<p>HTML</p>
-					<FontAwesomeIcon icon={faHtml5} />
+				<div className={style.known_tech__container}>
+					<p className={style.label}>HTML</p>
+					<FontAwesomeIcon className={style.icon} icon={faHtml5} />
 				</div>
-				<div>
-					<p>CSS</p>
-					<FontAwesomeIcon icon={faCss3} />
+				<div className={style.known_tech__container}>
+					<p className={style.label}>CSS</p>
+					<FontAwesomeIcon className={style.icon} icon={faCss3} />
 				</div>
-				<div>
-					<p>SCSS</p>
-					<FontAwesomeIcon icon={faSass} />
+				<div className={style.known_tech__container}>
+					<p className={style.label}>SCSS</p>
+					<FontAwesomeIcon className={style.icon} icon={faSass} />
 				</div>
-				<div>
-					<p>JavaScript</p>
-					<FontAwesomeIcon icon={faJs} />
+				<div className={style.known_tech__container}>
+					<p className={style.label}>JavaScript</p>
+					<FontAwesomeIcon className={style.icon} icon={faJs} />
 				</div>
-				<div>
-					<p>TypeScript</p>
-					<i></i>
+				<div className={style.known_tech__container}>
+					<p className={style.label}>TypeScript</p>
+					<img className={style.logo_img} src={typescript} alt="typescript" />
 				</div>
-				<div>
-					<p>Java</p>
-					<FontAwesomeIcon icon={faJava} />
+				<div className={style.known_tech__container}>
+					<p className={style.label}>Java</p>
+					<FontAwesomeIcon className={style.icon} icon={faJava} />
 				</div>
-				<div>
-					<p>React</p>
-					<FontAwesomeIcon icon={faReact} />
+				<div className={style.known_tech__container}>
+					<p className={style.label}>React</p>
+					<FontAwesomeIcon className={style.icon} icon={faReact} />
 				</div>
-				<div>
-					<p>Spring</p>
-					<i></i>
+				<div className={style.known_tech__container}>
+					<p className={style.label}>Spring</p>
+					<img className={style.logo_img} src={spring} alt="spring boot" />
 				</div>
-				<div>
-					<p>SQL</p>
-					<i></i>
+				<div className={style.known_tech__container}>
+					<p className={style.label}>SQL</p>
+					<FontAwesomeIcon className={style.icon} icon={faDatabase} />
 				</div>
-				<div>
-					<p>NestJS</p>
-					<i></i>
+				<div className={style.known_tech__container}>
+					<p className={style.label}>NestJS</p>
+					<img className={style.logo_img} src={nest} alt="nest JS" />
 				</div>
 			</div>
 		</main>

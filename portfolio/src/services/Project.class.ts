@@ -3,7 +3,7 @@ export class Project {
 		public title: string,
 		public imageLink: string,
 		public description: string,
-		public deployedLink: string,
-		public githubLink: string
+		public githubLink: string,
+		public deployedLink?: string
 	) {}
 }

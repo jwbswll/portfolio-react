@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import style from "./Contact.module.scss";
 
 const Contact = () => {
 	return (
-		<main>
-			<div>
-				<h2>work with me</h2>
-				<p>Feel free to contact me at:</p>
-				<div>
+		<main className={style.main}>
+			<div className={style.content}>
+				<h2 className={style.page_heading}>work with me</h2>
+				<p className={style.p}>Feel free to contact me at:</p>
+				<div className={style.icons}>
 					<Link to="https://www.linkedin.com/in/jack-boswell-971745279/">
-						<i></i>
+						<FontAwesomeIcon className={style.icon} icon={faLinkedin} />
 					</Link>
 					<Link to="https://github.com/jwbswll">
-						<i></i>
+						<FontAwesomeIcon className={style.icon} icon={faGithub} />
 					</Link>
 				</div>
 			</div>

@@ -36,7 +36,18 @@
 		margin-bottom: 0.2em;
 		.gh,
 		.li {
+			cursor: pointer;
+			text-decoration: none;
 			color: c.$tertiary;
+			cursor: pointer;
+			&:hover {
+				color: c.$secondary;
+				transition: 0.5s;
+			}
+			&:not(:hover) {
+				color: c.$tertiary;
+				transition: 0.5s;
+			}
 		}
 	}
 }
