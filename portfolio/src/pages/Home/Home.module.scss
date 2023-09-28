@@ -6,6 +6,7 @@
 	font-family: Aventena;
 	justify-content: space-between;
 	height: 100vh;
+	width: 100vw;
 	.header {
 		text-align: left;
 		align-self: self-start;
@@ -22,7 +23,7 @@
 		}
 	}
 	.image_container {
-		margin-top: -2em;
+		margin-top: -8em;
 		align-self: center;
 	}
 	.socials {

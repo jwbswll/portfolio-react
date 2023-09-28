@@ -1,8 +1,11 @@
 @use "../../partials/colors" as c;
 
-.heading {
-	font-family: "Aventena", Arial, Helvetica, sans-serif;
-	color: c.$secondary;
-	text-align: center;
-	font-size: 2em;
+.main {
+	width: 100vw;
+	.heading {
+		font-family: "Aventena", Arial, Helvetica, sans-serif;
+		color: c.$secondary;
+		text-align: center;
+		font-size: 2em;
+	}
 }
