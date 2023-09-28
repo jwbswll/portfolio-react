@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import style from "./Contact.module.scss";
+import React from "react";
 
 const Contact = () => {
+	console.log(React);
 	return (
 		<main className={style.main}>
 			<div className={style.content}>

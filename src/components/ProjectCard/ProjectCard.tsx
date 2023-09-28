@@ -2,8 +2,10 @@ import { faCode, faRocket } from "@fortawesome/free-solid-svg-icons";
 import { Project } from "../../services/Project.class";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import style from "./ProjectCard.module.scss";
+import React from "react";
 
 const ProjectCard = (props: { project: Project }) => {
+	console.log(React);
 	const { title, imageLink, description, deployedLink, githubLink } =
 		props.project;
 	return (
