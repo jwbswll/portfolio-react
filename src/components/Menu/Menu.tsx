@@ -1,10 +1,8 @@
 import { useState } from "react";
 import style from "./Menu.module.scss";
 import Nav from "../Nav/Nav";
-import React from "react";
 
 const Menu = () => {
-	console.log(React);
 	const [clicked, setClicked] = useState(false);
 
 	const toggleMenu = () => {

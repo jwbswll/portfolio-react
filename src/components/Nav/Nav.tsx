@@ -1,9 +1,7 @@
 import { NavLink } from "react-router-dom";
 import style from "./Nav.module.scss";
-import React from "react";
 
 const Nav = () => {
-	console.log(React);
 	return (
 		<section className={style.nav}>
 			<NavLink className={style.link} to="/">

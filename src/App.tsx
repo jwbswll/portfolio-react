@@ -5,10 +5,8 @@ import About from "./pages/About/About";
 import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
 import Menu from "./components/Menu/Menu";
-import React from "react";
 
 function App() {
-	console.log(React);
 	return (
 		<>
 			<BrowserRouter>

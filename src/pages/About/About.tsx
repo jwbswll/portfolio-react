@@ -12,10 +12,8 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import typescript from "../../icons8-typescript-50.png";
 import nest from "../../nestjs.svg";
 import spring from "../../icons8-spring-boot-48.png";
-import React from "react";
 
 const About = () => {
-	console.log(React);
 	return (
 		<main className={style.main}>
 			<h2 className={style.page_heading}>a little about me</h2>
